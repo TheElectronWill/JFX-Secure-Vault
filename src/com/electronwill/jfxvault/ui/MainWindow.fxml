@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.electronwill.jfxvault.ui.MainWindowController">
+    <children>
+        <TextField fx:id="recherche" layoutX="2.0" layoutY="371.0" onKeyReleased="#recherche" promptText="Rechercher..." />
+        <ListView fx:id="list" editable="true" layoutX="1.0" layoutY="36.0" onMouseClicked="#clicListe" prefHeight="327.0" prefWidth="174.0" />
+        <Button fx:id="ajouter" defaultButton="true" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#clicAjouter" text="Ajouter" />
+        <Button fx:id="supprimer" layoutX="80.0" layoutY="8.0" mnemonicParsing="false" onAction="#clicSupprimer" text="Supprimer" />
+        <TabPane fx:id="tabs" layoutX="183.0" layoutY="-1.0" prefHeight="400.0" prefWidth="416.0" tabClosingPolicy="ALL_TABS" />
+    </children>
+</AnchorPane>
